@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .wave-container {
+    width: 400px;
+    height: 200px;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 30%);
+  }
+
+  .wave-text {
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    shape-outside: polygon(0 0, 100% 0, 100% 70%, 0 30%);
+    margin: 0;
+    padding: 20px;
+  }
+</style>
+<title>Static Wave Shape Text</title>
+</head>
+<body>
+  <div class="wave-container">
+    <p class="wave-text">Hello, Wave Text!</p>
+  </div>
+</body>
+</html>
